@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sparkable | Web Design & Development</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* Fade-in animation */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 0.8s ease-out forwards;
+      opacity: 0;
+      animation-fill-mode: both;
+    }
+
+    .fade-in-up-1 { animation-delay: 0.2s; }
+    .fade-in-up-2 { animation-delay: 0.4s; }
+    .fade-in-up-3 { animation-delay: 0.6s; }
+    .fade-in-up-4 { animation-delay: 0.8s; }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full bg-white shadow-sm z-50">
+    <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-orange-500">Sparkable.in</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="#about" class="hover:text-orange-500">About</a>
+        <a href="#work" class="hover:text-orange-500">Work</a>
+        <a href="#contact" class="hover:text-orange-500">Contact</a>
+      </div>
+      <button id="menu-btn" class="md:hidden text-gray-800 focus:outline-none">
+        ☰
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+      <a href="#about" class="block px-4 py-2 hover:bg-gray-100">About</a>
+      <a href="#work" class="block px-4 py-2 hover:bg-gray-100">Work</a>
+      <a href="#contact" class="block px-4 py-2 hover:bg-gray-100">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-orange-100 to-purple-100 pt-24">
+    <h1 class="text-4xl sm:text-6xl font-extrabold mb-6 fade-in-up fade-in-up-1">
+      Design. Develop. Deliver.
+    </h1>
+    <p class="text-lg sm:text-xl mb-8 max-w-2xl fade-in-up fade-in-up-2">
+      We craft stunning websites and visuals that bring your brand to life.
+      <br>Let's build something extraordinary together.
+    </p>
+    <a href="#contact"
+       class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-full transition fade-in-up fade-in-up-3">
+       Let’s Work Together
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 container mx-auto px-6 text-center">
+    <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-12 fade-in-up fade-in-up-1">
+      <span class="text-orange-500">+</span> About Me <span class="text-orange-500">+</span>
+    </h2>
+    <p class="text-lg sm:text-xl leading-relaxed max-w-3xl mx-auto fade-in-up fade-in-up-2">
+      I’m a passionate <strong>web designer, developer, and illustrator</strong> who helps businesses
+      turn ideas into digital experiences that stand out. From clean UI/UX design to functional web apps,
+      I build with purpose and creativity.
+    </p>
+  </section>
+
+  <!-- Work Section -->
+  <section id="work" class="py-20 bg-white container mx-auto px-6 text-center">
+    <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-12 fade-in-up fade-in-up-1">
+      <span class="text-orange-500">+</span> Selected Work <span class="text-orange-500">+</span>
+    </h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Project 1 -->
+      <div class="bg-gray-100 rounded-2xl overflow-hidden shadow hover:shadow-lg transition fade-in-up fade-in-up-2">
+        <img src="https://picsum.photos/600/400?random=1" alt="Project 1" class="w-full">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold mb-2">E-commerce UI Design</h3>
+          <p class="text-gray-600">Modern, responsive design for an online store with smooth user experience.</p>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-gray-100 rounded-2xl overflow-hidden shadow hover:shadow-lg transition fade-in-up fade-in-up-3">
+        <img src="https://picsum.photos/600/400?random=2" alt="Project 2" class="w-full">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+          <p class="text-gray-600">Clean and minimal personal website for showcasing creative work.</p>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-gray-100 rounded-2xl overflow-hidden shadow hover:shadow-lg transition fade-in-up fade-in-up-4">
+        <img src="https://picsum.photos/600/400?random=3" alt="Project 3" class="w-full">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold mb-2">Business Landing Page</h3>
+          <p class="text-gray-600">Fast-loading, responsive business landing page with CTA integration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gradient-to-r from-orange-50 to-purple-50 text-center">
+    <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-10 fade-in-up fade-in-up-1">
+      <span class="text-orange-500">+</span> Contact Me <span class="text-orange-500">+</span>
+    </h2>
+    <p class="text-lg sm:text-xl mb-8 fade-in-up fade-in-up-2">
+      Have a project in mind? Let’s create something amazing together.
+    </p>
+    <a href="mailto:sparkable.in@gmail.com"
+       class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded-full transition fade-in-up fade-in-up-3">
+       Get in Touch
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-6 text-center border-t">
+    <p class="text-gray-500 text-sm">© 2025 Sparkable.in — Crafted with passion.</p>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
