@@ -9,6 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
+    
     /* Fade-in animation */
     @keyframes fadeInUp {
       from {
@@ -90,47 +91,59 @@
     </h2>
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
       <!-- Project 1 -->
-      <div class="bg-gray-100 rounded-2xl overflow-hidden shadow hover:shadow-lg transition fade-in-up fade-in-up-2">
+      <a href="https://www.behance.net/gallery/228807859/Mobile-App-UI-Design" 
+        target="_blank" 
+        class="bg-gray-100 rounded-2xl overflow-hidden shadow hover:shadow-lg transition fade-in-up fade-in-up-2 block">
         <img src="https://picsum.photos/600/400?random=1" alt="Project 1" class="w-full">
         <div class="p-5">
           <h3 class="text-xl font-semibold mb-2">E-commerce UI Design</h3>
           <p class="text-gray-600">Modern, responsive design for an online store with smooth user experience.</p>
         </div>
-      </div>
-
+       </a>
       <!-- Project 2 -->
-      <div class="bg-gray-100 rounded-2xl overflow-hidden shadow hover:shadow-lg transition fade-in-up fade-in-up-3">
-        <img src="https://picsum.photos/600/400?random=2" alt="Project 2" class="w-full">
-        <div class="p-5">
-          <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
-          <p class="text-gray-600">Clean and minimal personal website for showcasing creative work.</p>
-        </div>
+       <a href="https://www.behance.net/gallery/229053519/Portfolio-template-for-freelancers" 
+       target="_blank" 
+       class="bg-gray-100 rounded-2xl overflow-hidden shadow hover:shadow-lg transition fade-in-up fade-in-up-3 block">
+      <img src="https://picsum.photos/600/400?random=2" alt="Project 2" class="w-full">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+        <p class="text-gray-600">Clean and minimal personal website for showcasing creative work.</p>
       </div>
+    </a>
 
       <!-- Project 3 -->
-      <div class="bg-gray-100 rounded-2xl overflow-hidden shadow hover:shadow-lg transition fade-in-up fade-in-up-4">
-        <img src="https://picsum.photos/600/400?random=3" alt="Project 3" class="w-full">
-        <div class="p-5">
-          <h3 class="text-xl font-semibold mb-2">Business Landing Page</h3>
-          <p class="text-gray-600">Fast-loading, responsive business landing page with CTA integration.</p>
-        </div>
+       <a href="https://www.behance.net/gallery/228806321/Brand-Identity-Design-for-Rising-Gyms" 
+       target="_blank" 
+       class="bg-gray-100 rounded-2xl overflow-hidden shadow hover:shadow-lg transition fade-in-up fade-in-up-4 block">
+      <img src="https://picsum.photos/600/400?random=3" alt="Project 3" class="w-full">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold mb-2">Business Landing Page</h3>
+        <p class="text-gray-600">Fast-loading, responsive business landing page with CTA integration.</p>
       </div>
+      </a>
     </div>
-  </section>
+    </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-20 bg-gradient-to-r from-orange-50 to-purple-50 text-center">
-    <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-10 fade-in-up fade-in-up-1">
-      <span class="text-orange-500">+</span> Contact Me <span class="text-orange-500">+</span>
-    </h2>
-    <p class="text-lg sm:text-xl mb-8 fade-in-up fade-in-up-2">
-      Have a project in mind? Let’s create something amazing together.
-    </p>
-    <a href="mailto:sparkable.in@gmail.com"
-       class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded-full transition fade-in-up fade-in-up-3">
-       Get in Touch
-    </a>
-  </section>
+  <!-- Contact Section -->
+<section id="contact" class="py-20 bg-gradient-to-r from-orange-50 to-purple-50 text-center">
+  <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-10 fade-in-up fade-in-up-1">
+    <span class="text-orange-500">+</span> Contact Me <span class="text-orange-500">+</span>
+  </h2>
+  <p class="text-lg sm:text-xl mb-8 fade-in-up fade-in-up-2">
+    Have a project in mind? Let’s create something amazing together.
+  </p>
+
+  <form action="https://formspree.io/f/yourformid" method="POST" class="max-w-lg mx-auto space-y-4 fade-in-up fade-in-up-3">
+    <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none">
+    <input type="email" name="_replyto" placeholder="Your Email" required class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none">
+    <textarea name="message" rows="5" placeholder="Tell me about your project..." required class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-none"></textarea>
+    <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded-full transition w-full">
+      Send Message
+    </button>
+  </form>
+</section>
+
 
   <!-- Footer -->
   <footer class="bg-white py-6 text-center border-t">
